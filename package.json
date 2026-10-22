@@ -1,0 +1,16 @@
+{
+  "name": "trawiller-root",
+  "version": "1.0.0",
+  "description": "Trawiller — Multi-Role Tourism Platform for Indian Hill Stations",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "seed": "npm --prefix server run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
